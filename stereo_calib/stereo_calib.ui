@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>stereo_calibClass</class>
+ <widget class="QMainWindow" name="stereo_calibClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1045</width>
+    <height>743</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>stereo_calib</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout" rowstretch="6,1">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QCustomPlot" name="customPlot" native="true"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionCalib"/>
+   <addaction name="actionStereo"/>
+  </widget>
+  <action name="actionCalib">
+   <property name="icon">
+    <iconset resource="stereo_calib.qrc">
+     <normaloff>:/stereo_calib/Resources/color_thresholder_load_camera_24.png</normaloff>:/stereo_calib/Resources/color_thresholder_load_camera_24.png</iconset>
+   </property>
+   <property name="text">
+    <string>Calib</string>
+   </property>
+  </action>
+  <action name="actionStereo">
+   <property name="icon">
+    <iconset resource="stereo_calib.qrc">
+     <normaloff>:/stereo_calib/Resources/camera_calibrator_24.png</normaloff>:/stereo_calib/Resources/camera_calibrator_24.png</iconset>
+   </property>
+   <property name="text">
+    <string>Stereo</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="stereo_calib.qrc"/>
+ </resources>
+ <connections/>
+</ui>

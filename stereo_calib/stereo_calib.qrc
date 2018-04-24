@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="stereo_calib">
+    <file>Resources/AddImage_24.png</file>
+    <file>Resources/camera_calibrator_24.png</file>
+    <file>Resources/cameracalibratoricon.png</file>
+    <file>Resources/color_thresholder_load_camera_24.png</file>
+  </qresource>
+</RCC>
